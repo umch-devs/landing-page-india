@@ -40,7 +40,7 @@ export function Faq() {
     <section id="faq" className="bg-slate-50 py-20 md:py-28">
       <div className="mx-auto max-w-3xl px-6">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber-600">
+          <p className="text-sm font-semibold tracking-widest text-amber-600 uppercase">
             FAQ
           </p>
           <h2 className="mt-3 text-3xl font-bold text-primary md:text-4xl">
@@ -53,7 +53,7 @@ export function Faq() {
             <div key={i}>
               <button
                 onClick={() => setOpen(open === i ? null : i)}
-                className="flex w-full items-center justify-between gap-4 py-5 text-left"
+                className="flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left"
               >
                 <span className="text-base font-semibold text-primary">
                   {faq.q}

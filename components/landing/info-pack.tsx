@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { useState } from "react"
 
 export function InfoPack() {
   const [name, setName] = useState("")
@@ -18,18 +18,18 @@ export function InfoPack() {
 
   return (
     <section id="info-pack" className="bg-white py-20 md:py-28">
-      <div className="mx-auto  max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
         {/* Section header */}
         <div className="mb-14 text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber-600">
+          <p className="text-sm font-semibold tracking-widest text-amber-600 uppercase">
             Free Resources
           </p>
           <h2 className="mt-3 text-3xl font-bold text-primary md:text-4xl">
             Your Admission Pack &mdash; Free Download
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Get all the important information about the application process,
-            key dates, and programme structure &mdash; as a free PDF.
+            Get all the important information about the application process, key
+            dates, and programme structure &mdash; as a free PDF.
           </p>
         </div>
 
@@ -44,8 +44,9 @@ export function InfoPack() {
               </p>
             </div>
 
-            <h3 className="text-2xl font-bold leading-snug text-white md:text-3xl">
-              Your Admission Pack &mdash;<br />
+            <h3 className="text-2xl leading-snug font-bold text-white md:text-3xl">
+              Your Admission Pack &mdash;
+              <br />
               Free Download
             </h3>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/75">
@@ -70,17 +71,21 @@ export function InfoPack() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="Full Name *"
-                      className="h-12 w-full rounded-lg border border-border bg-white px-4 pr-10 text-sm text-foreground outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20"
+                      className="h-12 w-full rounded-lg border border-border bg-white px-4 pr-10 text-sm text-foreground transition outline-none focus:border-accent focus:ring-2 focus:ring-accent/20"
                     />
                     <svg
-                      className="pointer-events-none absolute right-3 top-1/2 size-5 -translate-y-1/2 text-muted-foreground"
+                      className="pointer-events-none absolute top-1/2 right-3 size-5 -translate-y-1/2 text-muted-foreground"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.5-1.632z" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.5-1.632z"
+                      />
                     </svg>
                   </div>
 
@@ -92,17 +97,21 @@ export function InfoPack() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Email Address *"
-                      className="h-12 w-full rounded-lg border border-border bg-white px-4 pr-10 text-sm text-foreground outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20"
+                      className="h-12 w-full rounded-lg border border-border bg-white px-4 pr-10 text-sm text-foreground transition outline-none focus:border-accent focus:ring-2 focus:ring-accent/20"
                     />
                     <svg
-                      className="pointer-events-none absolute right-3 top-1/2 size-5 -translate-y-1/2 text-muted-foreground"
+                      className="pointer-events-none absolute top-1/2 right-3 size-5 -translate-y-1/2 text-muted-foreground"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                      />
                     </svg>
                   </div>
 
@@ -115,8 +124,7 @@ export function InfoPack() {
                       className="mt-0.5 size-4 shrink-0 rounded border-border accent-primary"
                       required
                     />
-                    I agree to the processing of my data in accordance with
-                    the{" "}
+                    I agree to the processing of my data in accordance with the{" "}
                     <a
                       href="https://edu.umch.de/privacy-policy/"
                       target="_blank"
@@ -142,7 +150,11 @@ export function InfoPack() {
                       strokeWidth={1.5}
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+                      />
                     </svg>
                     Download Now &mdash; Free
                   </Button>

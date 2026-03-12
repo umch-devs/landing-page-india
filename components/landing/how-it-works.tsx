@@ -26,7 +26,7 @@ export function HowItWorks() {
     <section id="pathway" className="bg-white py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber-600">
+          <p className="text-sm font-semibold tracking-widest text-amber-600 uppercase">
             Simple Application Process
           </p>
           <h2 className="mt-3 text-3xl font-bold text-primary md:text-4xl">
@@ -34,7 +34,8 @@ export function HowItWorks() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             Complete the entire application process online from the comfort of
-            your sofa.<br/> No need to travel for entrance exams or interviews.
+            your sofa.
+            <br /> No need to travel for entrance exams or interviews.
           </p>
         </div>
 
@@ -43,7 +44,7 @@ export function HowItWorks() {
             <div key={step.number} className="relative">
               {/* Connector line (desktop) */}
               {i < steps.length - 1 && (
-                <div className="absolute right-0 top-8 hidden h-0.5 w-8 translate-x-full bg-accent md:block" />
+                <div className="absolute top-8 right-0 hidden h-0.5 w-8 translate-x-full bg-accent md:block" />
               )}
               <div className="flex flex-col">
                 <span className="mb-4 text-4xl font-black text-accent">
@@ -59,9 +60,10 @@ export function HowItWorks() {
         </div>
 
         <div className="mt-14 text-center">
-          <CallToActionLink titel="Start Your Application Now"/>
+          <CallToActionLink titel="Start Your Application Now" />
           <p className="mt-3 text-sm text-muted-foreground">
-            Free and non-binding. Apply early &mdash; even before or with your diploma.
+            Free and non-binding. Apply early &mdash; even before or with your
+            diploma.
           </p>
         </div>
       </div>

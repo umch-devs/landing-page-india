@@ -33,16 +33,16 @@ export function StudyExperience() {
     <section className="bg-slate-50 py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber-600">
+          <p className="text-sm font-semibold tracking-widest text-amber-600 uppercase">
             Your Study Experience
           </p>
           <h2 className="mt-3 text-3xl font-bold text-primary md:text-4xl">
             World-Class Medical Education &mdash; Right Here in Hamburg
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            At UMFST-UMCH you don&apos;t just get a degree &mdash; you get hands-on clinical
-            training, global recognition, and everything you need to succeed as
-            a doctor worldwide.
+            At UMFST-UMCH you don&apos;t just get a degree &mdash; you get
+            hands-on clinical training, global recognition, and everything you
+            need to succeed as a doctor worldwide.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export function StudyExperience() {
             className="h-10 rounded-full border-primary/20 px-8 text-base font-semibold text-primary hover:bg-primary/5"
             asChild
           >
-            <a href="#contact">Get Our Free UMFST-UMCH Brochure</a>
+            <a href="#info-pack">Get Our Free UMFST-UMCH Brochure</a>
           </Button>
         </div>
       </div>

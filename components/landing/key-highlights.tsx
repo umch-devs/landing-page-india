@@ -35,7 +35,7 @@ export function KeyHighlights() {
     <section className="bg-white py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-14 text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber-600">
+          <p className="text-sm font-semibold tracking-widest text-amber-600 uppercase">
             What Sets Us Apart
           </p>
           <h2 className="mt-3 text-3xl font-bold text-primary md:text-4xl">
@@ -43,8 +43,8 @@ export function KeyHighlights() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             From free German courses to globally recognised accreditations and
-            early clinical practice &mdash; discover what makes UMFST-UMCH the ideal
-            choice for Indian students.
+            early clinical practice &mdash; discover what makes UMFST-UMCH the
+            ideal choice for Indian students.
           </p>
         </div>
 
@@ -67,14 +67,14 @@ export function KeyHighlights() {
                 )}
 
                 {/* Yellow badge */}
-                <div className="absolute bottom-4 right-4 -rotate-3 rounded bg-amber-300 px-3 py-1.5 shadow-md">
+                <div className="absolute right-4 bottom-4 -rotate-3 rounded bg-amber-300 px-3 py-1.5 shadow-md">
                   <p className="text-xs font-bold text-primary">{card.badge}</p>
                 </div>
               </div>
 
               {/* Content */}
               <div className="flex flex-1 flex-col bg-primary p-6">
-                <h3 className="text-lg font-bold leading-snug text-white">
+                <h3 className="text-lg leading-snug font-bold text-white">
                   {card.title}
                 </h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-white/75">
@@ -87,7 +87,11 @@ export function KeyHighlights() {
                     className="rounded-full border-white/30 bg-transparent text-sm font-semibold text-white hover:bg-white/10"
                     asChild
                   >
-                    <a href={card.href} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={card.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {card.cta}
                     </a>
                   </Button>

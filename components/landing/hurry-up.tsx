@@ -14,14 +14,15 @@ export function HurryUp() {
         {/* Header */}
         <div className="flex flex-col items-center gap-8 md:flex-row md:items-start md:gap-12">
           <div className="max-w-md">
-            <h2 className="text-2xl font-bold leading-tight text-primary md:text-3xl">
-              Boost Your Chances:<br />
+            <h2 className="text-2xl leading-tight font-bold text-primary md:text-3xl">
+              Boost Your Chances:
+              <br />
               The Perfect Application Timeline for Future Indian Students
             </h2>
           </div>
           <div className="relative flex items-center justify-center">
             <div className="flex size-28 items-center justify-center rounded-full bg-slate-200 md:size-32">
-              <span className="text-5xl md:text-6xl mb-3">🇮🇳</span>
+              <span className="mb-3 text-5xl md:text-6xl">🇮🇳</span>
             </div>
           </div>
         </div>
@@ -33,7 +34,9 @@ export function HurryUp() {
             {/* Don't forget note */}
             <div className="-rotate-3 rounded bg-amber-300 px-4 py-2 shadow-md">
               <p className="text-sm font-bold text-primary">
-                Don&apos;t forget to<br />apply early!
+                Don&apos;t forget to
+                <br />
+                apply early!
               </p>
             </div>
             {/* Deadline note */}
@@ -42,23 +45,38 @@ export function HurryUp() {
                 Application deadline!
               </p>
               <p className="text-sm text-muted-foreground">
-                Last chance to apply now<br />for autumn
+                Last chance to apply now
+                <br />
+                for autumn
               </p>
             </div>
           </div>
 
-          {/* Best time to apply label */}
-          <div className="relative mb-2">
-            <div className="inline-flex w-1/2 items-center justify-center rounded-full bg-primary px-6 py-2">
-              <div className="text-center">
-                <p className="text-sm font-bold text-white">Best time to apply!</p>
-                <p className="text-xs text-white/70">(even before or with your diploma)</p>
-              </div>
+          {/* Best time to apply – timeline bracket */}
+          <div className="relative mb-1 ml-2 w-1/2">
+            {/* Label */}
+            <div className="text-center">
+              <p className="text-sm font-bold text-primary">
+                Best time to apply!
+              </p>
+              <p className="text-xs text-muted-foreground">
+                (even before or with your diploma)
+              </p>
+            </div>
+            {/* Bracket with arrow */}
+            <div className="relative mt-1 flex items-end justify-between px-1">
+              <div className="h-3 w-px bg-primary" />
+              <div className="absolute inset-x-1 top-0 border-t-2 border-primary" />
+              <div className="h-3 w-px bg-primary" />
+            </div>
+            {/* Down arrow */}
+            <div className="-mt-px flex justify-center">
+              <div className="h-0 w-0 border-x-[5px] border-t-[6px] border-x-transparent border-t-primary" />
             </div>
           </div>
 
           {/* Gradient timeline bar */}
-          <div className="relative h-5 w-full overflow-hidden rounded-full">
+          <div className="relative h-8 w-full overflow-hidden rounded-full">
             <div
               className="absolute inset-0"
               style={{
@@ -72,12 +90,20 @@ export function HurryUp() {
           <div className="relative mt-3">
             <div className="flex justify-between">
               {milestones.map((m) => (
-                <div key={m.month} className="flex flex-col items-center text-center" style={{ width: `${100 / milestones.length}%` }}>
-                  <span className="text-sm font-bold text-primary">{m.month}</span>
+                <div
+                  key={m.month}
+                  className="flex flex-col items-center text-center"
+                  style={{ width: `${100 / milestones.length}%` }}
+                >
+                  <span className="text-sm font-bold text-primary">
+                    {m.month}
+                  </span>
                   {m.label && (
-                    <p className="mt-1 whitespace-pre-line text-xs leading-tight text-muted-foreground">
+                    <p className="mt-1 text-xs leading-tight whitespace-pre-line text-muted-foreground">
                       {m.label.includes("Academic") ? (
-                        <span className="font-semibold text-amber-600">{m.label}</span>
+                        <span className="font-semibold text-amber-600">
+                          {m.label}
+                        </span>
                       ) : (
                         <>
                           <span className="font-semibold text-primary">

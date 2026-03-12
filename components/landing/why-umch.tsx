@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import CallToActionLink from "../shared/CallToActionLink"
 
 const benefits = [
@@ -45,16 +44,16 @@ export function WhyUMFSTUMCH() {
     <section id="why-UMFST-UMCH" className="bg-slate-50 py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber-600">
+          <p className="text-sm font-semibold tracking-widest text-amber-600 uppercase">
             Why UMFST-UMCH?
           </p>
           <h2 className="mt-3 text-3xl font-bold text-primary md:text-4xl">
             Germany&apos;s First International Medical Campus
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            UMFST-UMCH Hamburg offers Indian students everything they need to start a
-            successful medical career &mdash; world-class education, accessible
-            admission, and a globally recognised degree.
+            UMFST-UMCH Hamburg offers Indian students everything they need to
+            start a successful medical career &mdash; world-class education,
+            accessible admission, and a globally recognised degree.
           </p>
         </div>
 
@@ -74,7 +73,7 @@ export function WhyUMFSTUMCH() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <CallToActionLink titel="Secure Your Spot - Apply Now"/>
+          <CallToActionLink titel="Secure Your Spot - Apply Now" />
         </div>
       </div>
     </section>
