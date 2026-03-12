@@ -1,8 +1,9 @@
+import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 
 import "./globals.css"
+import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@/lib/utils";
 
 const fontSans = Geist({
   subsets: ["latin"],
@@ -14,6 +15,12 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 })
 
+export const metadata: Metadata = {
+  title: "UMFST-UMCH — Your Pathway to a Medical Career in Germany",
+  description:
+    "From MBBS at UMFST-UMCH Hamburg to a paid residency in Germany. No entrance exam, no tuition fees for specialist training, and a work contract from Day 1.",
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,10 +30,17 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", fontSans.variable)}
+      className={cn(
+        "antialiased",
+        fontMono.variable,
+        "font-sans",
+        fontSans.variable,
+      )}
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

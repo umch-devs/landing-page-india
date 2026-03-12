@@ -1,19 +1,33 @@
-import { Button } from "@/components/ui/button"
+import { Hero } from "@/components/landing/hero"
+import { Footer } from "@/components/landing/footer"
+import { Faq } from "@/components/landing/faq"
+import { Events } from "@/components/landing/events"
+import { Comparison } from "@/components/landing/comparison"
+import { HowItWorks } from "@/components/landing/how-it-works"
+import { HurryUp } from "@/components/landing/hurry-up"
+import { StudyExperience } from "@/components/landing/settlement-benefits"
+import { CtaFinal } from "@/components/landing/cta-final"
+import { KeyHighlights } from "@/components/landing/key-highlights"
+import { InfoPack } from "@/components/landing/info-pack"
+import { WhyUMFSTUMCH } from "@/components/landing/why-umch"
+import { Testimonials } from "@/components/landing/testimonials"
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
+    <main>
+      <Hero />
+      <KeyHighlights />
+      <WhyUMFSTUMCH />
+      <Comparison />
+      <StudyExperience />
+      <HowItWorks />
+      <Testimonials />
+      <Events />
+      <HurryUp />
+      <InfoPack />
+      <Faq />
+      <CtaFinal />
+      <Footer />
+    </main>
   )
 }
