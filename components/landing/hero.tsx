@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { Limelight } from "next/font/google"
 import Link from "next/link"
 
 
@@ -38,7 +39,7 @@ export function Hero() {
                             className="rounded-full h-12 border border-accent/30 bg-accent/10 px-8 text-base font-semibold text-accent hover:bg-accent/20 hover:text-white"
                             asChild
                         >
-                            <a href="#contact">Request Free Information</a>
+                            <a href="#apply">Request Free Information</a>
                         </Button>
                     </div>
 
