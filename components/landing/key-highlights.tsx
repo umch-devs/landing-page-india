@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 const cards = [
   {
@@ -84,16 +85,16 @@ export function KeyHighlights() {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="rounded-full border-white/30 bg-transparent text-sm font-semibold text-white hover:bg-white/10"
+                    className="w-full rounded-full border-white/30 bg-transparent text-sm font-semibold text-white hover:bg-white/10 hover:text-white/90"
                     asChild
                   >
-                    <a
+                    <Link
                       href={card.href}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       {card.cta}
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </div>

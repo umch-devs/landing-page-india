@@ -86,10 +86,10 @@ export function Comparison() {
 
         {/* Mobile Cards */}
         <div className="mt-14 space-y-4 md:hidden">
-          {rows.map((row) => (
+          {rows.map((row, i) => (
             <div
               key={row.category}
-              className="rounded-xl border bg-white p-5 shadow-sm"
+              className={`${i === 0 ? "hidden" : "block"} rounded-xl border bg-white p-5 shadow-sm`}
             >
               <p className="text-sm font-bold text-primary">{row.category}</p>
               <div className="mt-3 space-y-2">
