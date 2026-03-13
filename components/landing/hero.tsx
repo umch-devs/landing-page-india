@@ -44,7 +44,7 @@ export function Hero() {
               className="h-12 rounded-full border border-accent/30 bg-accent/10 px-8 text-base font-semibold text-accent hover:bg-accent/20 hover:text-white"
               asChild
             >
-              <a href="#apply">Request Free Information</a>
+              <a href="#info-pack">Request Free Information</a>
             </Button>
           </div>
 
