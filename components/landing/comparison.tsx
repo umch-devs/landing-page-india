@@ -115,7 +115,7 @@ export function Comparison() {
         </div>
 
         <div className="mt-10 text-center">
-          <CallToActionLink titel="Start Your UMFST-UMCH Application" />
+          <CallToActionLink titel="Start Your Application" />
         </div>
       </div>
     </section>

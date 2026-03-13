@@ -66,10 +66,10 @@ export function StudyExperience() {
           <Button
             size="lg"
             variant="outline"
-            className="h-10 rounded-full border-primary/20 px-8 text-base font-semibold text-primary hover:bg-primary/5"
+            className="h-10 rounded-full border-primary/20 px-8 text-base font-semibold text-primary hover:bg-primary/5 max-sm:w-full"
             asChild
           >
-            <a href="#info-pack">Get Our Free UMFST-UMCH Brochure</a>
+            <a href="#info-pack">Get Our Free Brochure</a>
           </Button>
         </div>
       </div>

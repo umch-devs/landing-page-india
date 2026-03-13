@@ -27,7 +27,7 @@ export function Hero() {
             <Button
               variant={"outline"}
               size="lg"
-              className="h-12 rounded-full border-none bg-amber-300 px-8 text-base font-semibold text-primary hover:border-amber-400 hover:bg-amber-400"
+              className="h-12 rounded-full border-none bg-amber-300 px-8 text-base font-semibold text-primary hover:border-amber-400 hover:bg-amber-400 max-sm:w-full"
               asChild
             >
               <Link
@@ -41,7 +41,7 @@ export function Hero() {
             <Button
               variant={"outline"}
               size="lg"
-              className="h-12 rounded-full border border-accent/30 bg-accent/10 px-8 text-base font-semibold text-accent hover:bg-accent/20 hover:text-white"
+              className="h-12 rounded-full border border-accent/30 bg-accent/10 px-8 text-base font-semibold text-accent hover:bg-accent/20 hover:text-white max-sm:w-full"
               asChild
             >
               <a href="#info-pack">Request Free Information</a>

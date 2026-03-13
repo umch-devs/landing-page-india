@@ -12,7 +12,7 @@ const CallToActionLink = ({
     <Button
       variant={"outline"}
       size="lg"
-      className={`rounded-full border-none bg-amber-300 px-8 text-base font-semibold text-primary hover:border-amber-400 hover:bg-amber-400 ${fullWidth ? "w-full" : ""}`}
+      className={`rounded-full border-none bg-amber-300 px-8 text-base font-semibold text-primary hover:border-amber-400 hover:bg-amber-400 ${fullWidth ? "w-full" : "max-sm:w-full"}`}
       asChild
     >
       <Link

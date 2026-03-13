@@ -73,7 +73,7 @@ export function WhyUMFSTUMCH() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <CallToActionLink titel="Secure Your Spot - Apply Now" />
+          <CallToActionLink titel="Secure Your Spot" />
         </div>
       </div>
     </section>

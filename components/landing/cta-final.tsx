@@ -22,7 +22,7 @@ export function CtaFinal() {
               <Button
                 size="lg"
                 variant="outline"
-                className="h-10 rounded-full border border-white bg-accent/10 px-8 text-base font-semibold text-white hover:border-primary hover:bg-primary/20 hover:text-primary"
+                className="h-10 rounded-full border border-white bg-accent/10 px-8 text-base font-semibold text-white hover:border-primary hover:bg-primary/20 hover:text-primary max-sm:w-full"
                 asChild
               >
                 <a
